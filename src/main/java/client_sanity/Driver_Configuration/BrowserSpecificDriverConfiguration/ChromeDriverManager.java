@@ -21,9 +21,6 @@ public class ChromeDriverManager extends DriverManager {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         options.addArguments("--no-sandbox");
-        // TODO:Chrome proxy soxy options only for WFH cases (Remove when at work)
-        options.addArguments("--proxy-server=socks5://127.0.0.1:8100");
-
         return options;
     }
 }
